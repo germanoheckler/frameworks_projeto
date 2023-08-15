@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('usuario', 'App\Http\Controllers\UsuarioController@verPost');
+
 Route::get('/', function () {
     return view('welcome');
 });

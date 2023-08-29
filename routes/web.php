@@ -22,3 +22,7 @@ Route::get('/', function () {
 Route::get('/login', function () {
     return view('login');
 });
+
+Route::get('usuario', 'App\Http\Controllers\UsuarioController@index');
+
+Route::get('usuario/{id}', 'App\Http\Controllers\UsuarioController@show');

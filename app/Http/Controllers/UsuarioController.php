@@ -11,4 +11,10 @@ class UsuarioController extends Controller
         $usuario = Usuario::first();
         print($usuario);
     }
+    public function index(){
+        return Usuario::all();
+    }
+    public function show($id){
+        return Usuario::find($id);
+    }
 }
